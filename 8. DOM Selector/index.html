@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PADC Myanmar - Dom Selectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!-- Change first Div's text to PADC Myanmar-->
+  <!-- Change second Div's text to Your Name-->
+  <!-- Change third Div's ul' content to the list of programming languages-->
+  <!-- Change fourth Div's ul' content to the list of dog name-->
+  <div id="first">First Div</div>
+  <div class="second">Second Div</div>
+  <div id="third">
+    <ul>
+      <li>First Node</li>
+      <li>Second Node</li>
+      <li>Third Node</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>First Node</li>
+      <li>Second Node</li>
+    </ul>
+  </div>
+  <script>
+    const firstDiv = document.getElementById("first");
+    firstDiv.textContent = "First DIV";
+    const secondDiv = document.getElementsByClassName('second')[0];
+    secondDiv.innerHTML = "Second Div";
+  </script>
+</body>
+
+</html>

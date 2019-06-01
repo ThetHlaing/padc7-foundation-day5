@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PADC Myanmar - Class</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>  
+  <script>
+
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+    // Implement Cat class
+    // speak function of Cat should show a different log than Animal
+
+    class Animal {
+      constructor(name) {
+        this.name = name;             
+      }
+      
+      speak(){        
+        console.log(`${this.name} speak`);
+      }
+    }
+
+    class Dog extends Animal {
+      constructor(name) {
+        super(name);
+      }
+
+      speak(){
+        super.speak();
+        console.log(`${this.name} bark`);
+      }
+    }    
+
+    let d = new Dog('Mitzie');    
+    d.speak(); //This function should return the result of both parent and child functions
+
+  </script>
+</body>
+
+</html>

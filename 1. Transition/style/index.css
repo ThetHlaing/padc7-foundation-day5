@@ -1,0 +1,22 @@
+.green-ball, .four-color, .move-around {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border-radius: 100px;
+}
+
+.green-ball {
+  background-color: green;
+}
+
+.four-color {
+  border-top: 9px solid blue;
+  border-right: 9px solid #fe5b5b;
+  border-bottom: 9px solid green;
+  border-left: 9px solid #c32b2b;
+}
+
+.move-around {
+  background-color: #715dcc;
+}
+/*# sourceMappingURL=index.css.map */

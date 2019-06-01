@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PADC Myanmar - Loops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <script>
+    const array_val = ['yangon', 'mandalay', 'naypyitaw'];
+
+    for(let i; i < array_val.length; i++){
+      console.log(array_val[i]);
+    }
+
+    for (let index in array_val) {
+       console.log(index);
+       console.log(array_val[index]);
+     }
+
+     for (let item of array_val) {
+      console.log(item);
+    }
+    
+
+    let new_obj = { "test": "test_value", "test2": "test value 2" };
+
+    for(let i; i < new_obj.length; i++){
+      console.log(new_obj[i]);
+    }
+
+    for (let index in new_obj) {
+      console.log(index);
+      console.log(array_val[index]);
+    }    
+
+
+    for (let item of new_obj) {
+      console.log(item);
+    }
+
+  </script>
+</body>
+
+</html>

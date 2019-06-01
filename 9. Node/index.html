@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PADC Myanmar - Dom Selectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!-- REF : https://developer.mozilla.org/en-US/docs/Web/API/Node -->
+  <!-- Add child node inside First DIV-->
+  <div id="first"></div>
+  <div class="second"></div>
+  <div id="third">
+    <ul>
+      <li>First Node</li>
+      <li>Second Node</li>
+      <li>Third Node</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>First Node</li>
+      <li>Second Node</li>
+    </ul>
+  </div>
+  <script>
+    const firstDiv = document.getElementById("first");
+    firstDiv.textContent = "<p>First DIV</p>";
+    const secondDiv = document.querySelector('.second');
+    secondDiv.innerHTML = "<p>Second DIV</p>";
+  </script>
+</body>
+
+</html>

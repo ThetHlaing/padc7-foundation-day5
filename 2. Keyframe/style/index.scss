@@ -1,0 +1,57 @@
+%circle {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 100px;
+}
+
+.green-ball {
+    background-color: green;	
+    @extend %circle;
+    animation:change-to-square 1s 0s infinite alternate;		
+}
+
+.four-color {
+    border-top: 9px solid blue;
+    border-right: 9px solid #fe5b5b;
+    border-bottom: 9px solid green;
+    border-left: 9px solid #c32b2b;		
+    @extend %circle;	
+}
+
+.move-around {
+    background-color: rgb(113, 93, 204);
+    @extend %circle;			
+}
+
+@keyframes change-to-square {
+    from {
+        border-radius: 50px;
+        background-color: green;
+    }
+
+    to {
+        border-radius: 10px;
+        background-color: blue;
+    }
+}
+
+@keyframes move-around-animation{
+    0% {
+        transform: translatX(0px);
+    }
+
+    25%{
+        transform: translateX(400px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

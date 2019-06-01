@@ -1,0 +1,24 @@
+%circle {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 100px;
+}
+
+.green-ball {
+    background-color: green;	
+    @extend %circle;		
+}
+
+.four-color {
+    border-top: 9px solid blue;
+    border-right: 9px solid #fe5b5b;
+    border-bottom: 9px solid green;
+    border-left: 9px solid #c32b2b;		
+    @extend %circle;	
+}
+
+.move-around {
+    background-color: rgb(113, 93, 204);
+    @extend %circle;			
+}
