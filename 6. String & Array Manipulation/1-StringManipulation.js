@@ -13,8 +13,8 @@
       // Use Concat() and slice()
       // Do not use string.replace();
       // Your code goes here!
-
-      return string;
+      const secondString = "PADC M";
+      return secondString.concat(string.slice(7));
     };
 
     console.log(padcFormatter(text));
